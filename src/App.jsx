@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { createGlobalStyle } from 'styled-components'
-
 import allColors from './styles/colors'
+import FormTask from './components/FormTask'
 
 const GlobalSyle = createGlobalStyle`
     body{
-        font-family:sans-serif;
+        font-family: Helvetica, sans-serif;
         background-color: #222;
         color:${allColors.mainColor};
         text-align: center;
@@ -21,6 +21,7 @@ class App extends Component {
             <>
                 <GlobalSyle />
                 <h1>To do list</h1>
+                <FormTask></FormTask>
             </>
 
         )
