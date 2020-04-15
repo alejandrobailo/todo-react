@@ -11,10 +11,23 @@ const TaskContainer = styled.div`
     padding: 0 1rem;
     margin: 1rem auto;
     background-color: ${({ color }) => color};
+    border-radius: 5px;
 `
 
 const TaskButton = styled.button`
+    font-size: .8rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .3rem .5rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
 
+    &:hover{
+        background-color: #fff;
+        color: #222
+    }
 `
 
 const TaskText = styled.p`

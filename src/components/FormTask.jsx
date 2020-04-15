@@ -16,6 +16,14 @@ const Button = styled.button`
     border: 1px solid ${allColors.mainColor};
     color: ${allColors.mainColor};
     cursor: pointer;
+    border-radius: 5px;
+    padding: .3rem .5rem;
+    outline: none;
+
+    &:hover{
+        background-color: ${allColors.mainColor};
+        color: #222;
+    }
 `
 
 const ColorsContainer = styled.div`
